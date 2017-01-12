@@ -28,14 +28,14 @@ def getAccuracy(player_info):
 
         name, count = player_info
         made, total = count
-        acc = float(made)/total
+        acc = float(made)/float(total)
         return (name, acc)
 
 
 player_single_score_pair = csv_rdd.map(map2pair)
 player_total_score_pair = player_single_score_pair.reduceByKey(scoreReduce)
 player_accuracy = player_total_score_pair.map(getAccuracy)
-player_accuracy_sorted = player_accuracy.sortBy(lambda ele: ele[1],False)
+player_accuracy_sorted = player_accuracy.sortBy(lambda ele: ele[1])
 
 results = player_accuracy_sorted.collect()
 

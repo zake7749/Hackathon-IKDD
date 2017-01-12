@@ -12,8 +12,7 @@ import csv
 
 with open("shot_logs.csv", "r") as csv_file:
 	csv_reader = csv.reader(csv_file, delimiter=',', quotechar='\"')
-	
-	diction = dict()
+        diction = dict()
 	for row in csv_reader:
 
 		if row[0] == "GAME_ID":
@@ -27,7 +26,6 @@ with open("shot_logs.csv", "r") as csv_file:
 				diction[row[19]] = (1, 1)
 			else:
 				diction[row[19]] = (0, 1)
-	
 		diction[row[19]] = (diction[row[19]][0], diction[row[19]][1] + 1)
 
 
@@ -40,4 +38,3 @@ with open("shot_logs.csv", "r") as csv_file:
 	accuercy = sorted(accuercy, key = lambda x: x[1])
 	for item in accuercy:
 		write_file.write(str(item[0]) + " " + str("%.2f" % item[1]) + "\n")
-		
