@@ -4,6 +4,7 @@ import csv
 conf = SparkConf().setAppName("Hit_Rate").setMaster("local[*]")
 sc = SparkContext(conf=conf)
 csv_file = open("../shot_logs.csv",'r')
+csv_file.next() # Drop the header line.
 data_list = csv.reader(csv_file)
 csv_rdd  = sc.parallelize(data_list)
 
