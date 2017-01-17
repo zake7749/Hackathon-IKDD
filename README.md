@@ -1,10 +1,10 @@
-# Hackathon-IKDD
+# IKDD Hackathon
 
-使用 **Spark** 分析 NBA 賽局資料
+透過 **Spark** 以 Map Reduce 於叢集上進行 NBA 賽局資料的並行分析。
 
 ## Problem1
 列出資料中，所有出現過球員的命中率。
-( 命中率請列出小數點後兩位 eg. 0.88，並由大到小排序 )
+( 命中率僅列出小數點後兩位 eg. 0.88，並由大到小排序 )
 
 程式名稱 : Hit_Rate.language
 輸出名稱 : Hit_Rate.txt
@@ -46,7 +46,9 @@
 |Team E Lose 16 | Team E Win 16 | Team E Win 16 |
 |Team F Win 15 | Team F Win 15 | Team F Win 15 |
 
-Result 1 Result 2 Result 3
+Result 1 : 拿 17 分必定贏球
+Result 2 : 拿 20 分必定贏球
+Result 3 : 沒答案
 
 程式名稱 : win_point.language
 輸出名稱 : win_point.txt
