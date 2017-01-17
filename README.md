@@ -36,14 +36,16 @@
 ---------------------------------------------------------------------
 下方列表舉例球員a，與其它隊伍的比賽輸贏及球員a該場比賽的得分
 
-<與某對比賽> <輸or贏> <該球員得分>
-Situation 1 Situation 2 Situation 3
-Team A Win 20 Team A Win 20 Team A Lose 20
-Team B Win 19 Team B Lose 19 Team B Win 19
-Team C Win 18 Team C Win 18 Team C Win 18
-Team D Win 17 Team D Win 17 Team D Win 17
-Team E Lose 16 Team E Win 16 Team E Win 16
-Team F Win 15 Team F Win 15 Team F Win 15
+|<與某對比賽>|<輸or贏>|<該球員得分>|
+|-----------|-------|----------|
+|Situation 1 | Situation 2 | Situation 3 |
+|Team A  Win 20 | Team A Win 20 | Team A Lose 20 |
+|Team B  Win 19 | Team B Lose 19 | Team B Win 19 |
+|Team C Win 18 | Team C Win 18 | Team C Win 18 |
+|Team D Win 17 | Team D Win 17 | Team D Win 17 |
+|Team E Lose 16 | Team E Win 16 | Team E Win 16 |
+|Team F Win 15 | Team F Win 15 | Team F Win 15 |
+
 Result 1 Result 2 Result 3
 
 程式名稱 : win_point.language
