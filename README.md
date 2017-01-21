@@ -2,7 +2,32 @@
 
 透過 **Spark** 以 Map Reduce 於叢集上進行 NBA 賽局資料的並行分析。
 
-## Problem1
+## Environment
+
+* python 2.7
+* Apache Spark 2.1.0
+* Hadoop 2.7
+
+## DataSet
+小量資料集採用 Kaggle 上的 [NBA shot logs](https://www.google.com.tw/search?q=Kaggle+NBA+shot+log&ie=utf-8&oe=utf-8&gws_rd=cr&ei=mTSDWMfNHojp0ASNuoCIAg)
+### 重要欄位簡述
+* GAME_ID – 比賽ID
+* MATCHUP – 比賽隊伍
+* LOCATION – 主場(H)/客場(A)
+* W – 贏(W)或輸(L)
+* DRIBBLES – 帶球時間
+* SHOT_DIST – 射籃距離
+* SHOT_RESULT – 是否投中 (made/missed)
+* CLOSEST_DEFENDER – 射籃時最近的防守球員
+* CLOSE_DEF_DIST – 射籃時與最近防守球員的距離
+* player_name – 該球射籃球員
+* FINAL_MARGIN – 比賽結束分差
+* SHOT_NUMBER – 某球員在該比賽第幾次射籃
+* PERIOD – 第幾節
+* TOUCH_TIME – 球員一拿到球到出手射籃的時間
+* PTS_TYPE – 2 or 3分球
+
+## Problem 1
 列出資料中，所有出現過球員的命中率。
 ( 命中率僅列出小數點後兩位 eg. 0.88，並由大到小排序 )
 
@@ -11,7 +36,7 @@
 輸出範例 : brian roberts 0.77
 
 
-## Problem2
+## Problem 2
 找出每位球員必定進球且進球數最多的射籃距離範圍。
 ( 如果有球員找出多個答案，請將所有結果列出，或者該位球員沒有範圍答案，則範圍結果輸出no，請參考下方輸出格式 )
 ```
@@ -29,7 +54,7 @@
 範例： brian roberts no
 ```
 
-## Problem3
+## Problem 3
 
 列出每位球員只要在比賽中拿到幾分，該隊員所屬隊伍就必定贏球。
 ( 如果有球員是沒答案的，則分數輸出no )
@@ -58,7 +83,7 @@ Result 3 : 沒答案
 <球員名稱1> <分數>
 <球員名稱2> <分數>
 ```
-## Problem4
+## Problem 4
 
 根據資料中的射籃距離，找進球數且命中率最高的射籃距離範圍。
 ( 若計算出的答案超過1個，請將答案全部列出 )
