@@ -32,7 +32,9 @@
 ( 命中率僅列出小數點後兩位 eg. 0.88，並由大到小排序 )
 
 程式名稱 : Hit_Rate.language
+
 輸出名稱 : Hit_Rate.txt
+
 輸出範例 : brian roberts 0.77
 
 
@@ -76,8 +78,11 @@ Result 2 : 拿 20 分必定贏球
 Result 3 : 沒答案
 
 程式名稱 : win_point.language
+
 輸出名稱 : win_point.txt
+
 輸出範例 : brian roberts 20 or brian roberts no
+
 輸出格式 : <球員名稱><空格><分數>
 ```
 <球員名稱1> <分數>
@@ -87,9 +92,13 @@ Result 3 : 沒答案
 
 根據資料中的射籃距離，找進球數且命中率最高的射籃距離範圍。
 ( 若計算出的答案超過1個，請將答案全部列出 )
+
 程式名稱：top_range.language
+
 輸出名稱 : top_range.txt
+
 輸出格式 (可能有兩種情況，如下)
+
 ```
 格式1 – 多種結果:
 <範圍結果1><空格><範圍結果2>...
